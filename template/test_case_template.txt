@@ -1,0 +1,10 @@
+
+    @jira_test(
+        issue_links=[issue],
+        name="$test_case_name$",
+        web_links=[jira_link],
+        confluence_links=[confluence_link],
+        folder=folder
+    )
+    def test_$test_number$(self, client):
+        pass

@@ -1,0 +1,10 @@
+from export_test_jira.wraper import jira_test
+
+issue = "TEST-15"
+jira_link = "https://google.com"
+confluence_link = "https://google.com"
+folder = "Test/Import"
+
+
+class TestSample:
+    $body$
