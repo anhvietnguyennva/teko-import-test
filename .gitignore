@@ -16,6 +16,8 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.idea
+__pycache__
 
 # Environments
 .env
@@ -29,4 +31,5 @@ venv.bak/
 # PyBuilder
 target/
 
+#Dependencies
 poetry.lock
