@@ -2,6 +2,8 @@
     @jira_test(
         issue_links=[issue],
         name="$test_case_name$",
+        objective="$test_case_objective$",
+        precondition="$test_case_precondition$",
         web_links=[jira_link],
         confluence_links=[confluence_link],
         folder=folder

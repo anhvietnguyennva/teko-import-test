@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name='teko-import-test',
     description='A simple commandline app for import test cases from .xlsx file',
-    version='0.1',
+    version='0.2',
     py_modules=['cli'],
     install_requires=[
         'Click',

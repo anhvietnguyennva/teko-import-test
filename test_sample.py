@@ -10,50 +10,12 @@ class TestSample:
     
     @jira_test(
         issue_links=[issue],
-        name="Test case name",
+        name="Return HTTP 400 when input is invalid",
+        objective="Test validate input",
+        precondition="No precondition",
         web_links=[jira_link],
         confluence_links=[confluence_link],
         folder=folder
     )
     def test_1(self, client):
-        pass
-
-    @jira_test(
-        issue_links=[issue],
-        name="a",
-        web_links=[jira_link],
-        confluence_links=[confluence_link],
-        folder=folder
-    )
-    def test_2(self, client):
-        pass
-
-    @jira_test(
-        issue_links=[issue],
-        name="b",
-        web_links=[jira_link],
-        confluence_links=[confluence_link],
-        folder=folder
-    )
-    def test_3(self, client):
-        pass
-
-    @jira_test(
-        issue_links=[issue],
-        name="d",
-        web_links=[jira_link],
-        confluence_links=[confluence_link],
-        folder=folder
-    )
-    def test_4(self, client):
-        pass
-
-    @jira_test(
-        issue_links=[issue],
-        name="v",
-        web_links=[jira_link],
-        confluence_links=[confluence_link],
-        folder=folder
-    )
-    def test_5(self, client):
         pass

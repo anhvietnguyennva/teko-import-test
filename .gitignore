@@ -16,6 +16,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.idea/
 .idea
 __pycache__
 
