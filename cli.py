@@ -97,6 +97,12 @@ def get_test_case_template() -> str:
     return template
 
 
+def format_test_case(test_case: TestCase):
+    test_case.name = test_case.name.replace("\n", "\\n\" + \n\"")
+    test_case.objective = test_case.objective.replace("\n", "\\n\" + \n\"")
+    test_case.precondition = test_case.precondition.replace("\n", "\\n\" + \n\"")
+
+
 @click.command()
 def cli():
     if is_invalid_env():
@@ -118,6 +124,7 @@ def cli():
     body = ""
     number = 1
     for test_case in test_cases:
+        format_test_case(test_case)
         test_case_gen = get_test_case_template()\
             .replace("$test_case_name$", test_case.name)\
             .replace("$test_number$", str(number))\
